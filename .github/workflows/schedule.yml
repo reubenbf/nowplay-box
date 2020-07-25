@@ -3,6 +3,8 @@ name: nowplay-box
 on:
   schedule:
     - cron: '*/10 * * * *'
+  push:
+    branches: master
 
 jobs:
   build:
@@ -12,7 +14,7 @@ jobs:
       - uses: actions/checkout@main
 
       - name: Update now-playing from Spotify
-        uses: reubenbf/nowplay-box@trial
+        uses: reubenbf/nowplay-box@master
         with:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
