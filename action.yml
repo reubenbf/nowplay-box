@@ -1,0 +1,36 @@
+name: 'NowPlay-Box'
+author: Reuben Francis
+description: 'Pinnable Dynamic Gist showing Spotify now-playing widget'
+
+inputs:
+  GH_TOKEN:
+    description: 'GitHub access token with Gist scope'
+    required: true
+
+  GIST_ID:
+    description: 'Gist ID for updation'
+    required: true
+
+  SPOTIPY_USER_ID:
+    description: 'Spotify Username'
+    required: true
+
+  SPOTIPY_CLIENT_ID:
+    description: 'Spotify client ID taken from Spotify API'
+    required: true
+
+  SPOTIPY_CLIENT_SECRET:
+    descroption: 'Spotify client secret taken from Spotify API'
+
+  SPOTIPY_REDIRECT_URI:
+    description: 'Callback URL for OAuth'
+    required: true
+
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'headphones'  
+  color: 'gray-dark'
