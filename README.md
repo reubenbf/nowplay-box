@@ -42,11 +42,11 @@ You can do that at https://github.com/settings/tokens/new
 Now every 10 minutes `schedule.yml` workflow will update your Gist
 
 <br>
-<!--
+
 <p align="center">
-	<img src="showcase.gif" alt="A showcase of some of the statuses" width=500/>
+	<img src="assets/sample.png" alt="Sample showcase" width=500/>
 </p>
--->
+
 <br>
 
 ## 📃 License
