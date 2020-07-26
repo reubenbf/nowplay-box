@@ -10,7 +10,6 @@
 
 ***
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![nowplay-box action](https://github.com/reubenbf/nowplay-box/workflows/nowplay-box%20action/badge.svg)
 
 **NowPlay-Box** is a simple **GitHub Action** built to make dynamic Gist displaying the album you're now-playing on **Spotify** .
 <br>
@@ -36,12 +35,11 @@ You can do that at https://github.com/settings/tokens/new
 	- **`GIST_ID`** - The ID of your newly created public Gist.
 
    *It will look like this:*  
-	 `https://gist.github.com/RangerDigital/`**`hugecodehaha`**.
+	 `https://gist.github.com/RangerDigital/`**`hugecode`**.
 <br>
 
 **That's It!**  
-Now every 10 minutes `schedule.yml` workflow will update your Gist,  
-It's now a good idea to pin it in your profile to show off your weeb power level!
+Now every 10 minutes `schedule.yml` workflow will update your Gist
 
 <br>
 <!--
