@@ -37,7 +37,7 @@ You can do that at https://github.com/settings/tokens/new
 	- **`GIST_ID`** - The ID of your newly created public Gist.
 
    *It will look like this:*  
-	 `https://gist.github.com/RangerDigital/`**`hugecode`**.
+	 `https://gist.github.com/<username>/<hugecode>`.
 <br>
 
 **That's It!**  
