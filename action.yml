@@ -20,10 +20,15 @@ inputs:
     required: true
 
   SPOTIPY_CLIENT_SECRET:
-    descroption: 'Spotify client secret taken from Spotify API'
+    description: 'Spotify client secret taken from Spotify API'
+    required: true
 
   SPOTIPY_REDIRECT_URI:
     description: 'Callback URL for OAuth'
+    required: true
+
+  SPOTIPY_REFRESH_TOKEN:
+    description: 'Spotify refresh token with the user-read-currently-playing scope'
     required: true
 
 

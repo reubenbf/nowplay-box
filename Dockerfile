@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.12-slim
 
 # Install dependencies.
 ADD requirements.txt /requirements.txt

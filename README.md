@@ -33,11 +33,24 @@ You can do that at https://github.com/settings/tokens/new
 	- **`SPOTIPY_CLIENT_ID`** - Spotify client ID taken from Spotify API
 	- **`SPOTIPY_CLIENT_SECRET`** - Spotify client secret taken from Spotify API
 	- **`SPOTIPY_REDIRECT_URI`** - Callback URL for OAuth
+	- **`SPOTIPY_REFRESH_TOKEN`** - A Spotify refresh token for your account (see below)
 	- **`GH_TOKEN`** - The access token you saved earlier.
 	- **`GIST_ID`** - The ID of your newly created public Gist.
 
    *It will look like this:*  
 	 `https://gist.github.com/<username>/<hugecode>`.
+<br>
+
+**Getting a refresh token**
+Run this once on your own machine, approve access in the browser, and save the printed value as the `SPOTIPY_REFRESH_TOKEN` secret:
+
+```bash
+pip install spotipy
+python -c "from spotipy.oauth2 import SpotifyOAuth; from spotipy.cache_handler import MemoryCacheHandler; a=SpotifyOAuth(client_id='<id>', client_secret='<secret>', redirect_uri='<redirect uri>', scope='user-read-currently-playing', cache_handler=MemoryCacheHandler()); print(a.get_access_token(as_dict=True)['refresh_token'])"
+```
+
+Never commit the `.cache*` token files spotipy creates.
+
 <br>
 
 **That's It!**  
